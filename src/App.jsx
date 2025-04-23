@@ -12,7 +12,7 @@ function App() {
     { id: 4, name: "Asmaa", email: "asmaa@gmail.com", isBlocked: false },
   ]);
 
-  setUsers(users);
+  setUsers();
 
   return (
     <section className="container">  
