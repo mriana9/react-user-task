@@ -12,6 +12,8 @@ function App() {
     { id: 4, name: "Asmaa", email: "asmaa@gmail.com", isBlocked: false },
   ]);
 
+  setUsers(users);
+
   return (
     <section className="container">  
       <div className="">
