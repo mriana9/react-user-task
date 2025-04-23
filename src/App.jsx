@@ -1,21 +1,22 @@
-import { useState } from "react";
+//import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import User from "./User";
 import CustomButton from "./shared/CustomButton";
 import AddUser from "./AddUser";
 
 function App() {
-  const [users, setUsers] = useState([
+  //const [users, setUsers] = useState([]);
+
+  let users = [
     { id: 1, name: "Tariq", email: "tariq@gmail.com", isBlocked: true },
     { id: 2, name: "Anas", email: "anas@gmail.com", isBlocked: false },
     { id: 3, name: "Hala", email: "hala@gmail.com", isBlocked: true },
     { id: 4, name: "Asmaa", email: "asmaa@gmail.com", isBlocked: false },
-  ]);
+  ];
 
-  setUsers();
 
   return (
-    <section className="container">  
+    <section className="container">
       <div className="">
         <h1 className="text-center mb-4">Add Users</h1>
         <AddUser />
